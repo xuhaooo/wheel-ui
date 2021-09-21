@@ -1,5 +1,5 @@
 <template>
   <div>
-    Frank
+    Frank 2
   </div>
 </template>
