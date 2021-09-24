@@ -1,13 +1,13 @@
 <template>
-  <div>Button 实例</div>
-  <h1>实例 1</h1>
+  <div>Button 示例</div>
+  <h1>示例 1</h1>
   <div>
     <Button>你好</Button>
     <Button theme="button">你好</Button>
     <Button theme="link">你好</Button>
     <Button theme="text">你好</Button>
   </div>
-  <h1>实例 2</h1>
+  <h1>示例 2</h1>
   <div>
     <div>
       <Button size="big">大大大大</Button>
@@ -25,7 +25,24 @@
       <Button theme="text" size="small">小小小</Button>
     </div>
   </div>
-
+  <h1>示例 3</h1>
+  <div>
+    <div>
+      <Button level="main">主要按钮</Button>
+      <Button>普通按钮</Button>
+      <Button level="danger">危险按钮</Button>
+    </div>
+    <div>
+      <Button theme="link" level="main">主要按钮</Button>
+      <Button theme="link">普通按钮</Button>
+      <Button theme="link" level="danger">危险按钮</Button>
+    </div>
+    <div>
+      <Button theme="text" level="main">主要按钮</Button>
+      <Button theme="text">普通按钮</Button>
+      <Button theme="text" level="danger">危险按钮</Button>
+    </div>
+  </div>
 </template>
 <script lang="ts">
 import Button from '../lib/Button.vue'
