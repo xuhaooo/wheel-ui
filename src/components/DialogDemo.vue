@@ -12,11 +12,16 @@
       <div>hi2</div>
     </template>
   </Dialog>
+  <h1>示例 2</h1>
+  <Button @click="showDialog">show</Button>
 </template>
+
 <script lang="ts">
 import Dialog from '../lib/Dialog.vue'
 import Button from '../lib/Button.vue'
-import { ref } from 'vue'
+import { ref,h } from 'vue'
+import {openDialog} from '../lib/openDialog'
+
 export default {
   components: {Dialog, Button},
   setup(){
@@ -27,8 +32,17 @@ export default {
     const f1 = () => {
       return false
     }
-    const f2 = () => { }
-    return {x, toggle, f1, f2}
+    const f2 = () => {}
+
+    const showDialog = () => {
+      openDialog({
+          title: h('strong', {}, '标题'),
+          content: '你好',
+          ok(){console.log('ok')},
+          cancel(){console.log('cancel')}
+        })
+    }
+    return {x, toggle, f1, f2, showDialog}
   }
 }
 </script>
