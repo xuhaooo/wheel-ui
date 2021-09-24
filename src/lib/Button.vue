@@ -1,15 +1,30 @@
 <template>
-  <button class="cat-button" :class="{[`cat-theme-${theme}`]: theme}">
+  <button class="cat-button" :class="classes">
     <slot></slot>
   </button>
 </template>
 <script lang="ts">
+import { computed } from 'vue'
 export default {
   props: {
     theme: {
       type: String,
       default: 'button'
+    },
+    size: {
+      type: String,
+      default: 'normal'
     }
+  },
+  setup(props){
+    const {theme,size} = props
+    const classes = computed(()=>{
+      return {
+        [`cat-theme-${theme}`]: theme,
+        [`cat-size-${size}`]: size,
+      }
+    })
+    return {classes}
   }
 }
 </script>
@@ -51,7 +66,8 @@ $radius: 4px;
     border-color: transparent;
     box-shadow: none;
     color: $blue;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: lighten($blue, 10%)
     }
   }
@@ -59,8 +75,21 @@ $radius: 4px;
     border-color: transparent;
     box-shadow: none;
     color: inherit;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background: darken(white, 5%);
+    }
+  }
+  &.cat-theme-button {
+    &.cat-size-big {
+      font-size: 24px;
+      height: 48px;
+      padding: 0 16px;
+    }
+    &.cat-size-small {
+      font-size: 12px;
+      height: 20px;
+      padding: 0 4px;
     }
   }
 }
