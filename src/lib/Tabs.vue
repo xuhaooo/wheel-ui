@@ -10,15 +10,12 @@
       <div class="cat-tabs-nav-indicator" ref="indicator"></div>
     </div>
     <div class="cat-tabs-content">
-      <component class="cat-tabs-content-item" 
-        v-for="(c,index) in defaults"
-        :class="{selected: c.props.title === selected}" 
-        :is="c" :key="index"/>
+      <component :is="current" :key="current.props.title"/>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { onMounted, ref, watchEffect } from 'vue'
+import { computed, onMounted, ref, watchEffect } from 'vue'
 import Tab from './Tab.vue'
 export default {
   props: {
@@ -49,6 +46,10 @@ export default {
       }
     })
 
+    const current = computed(() => {
+      return defaults.find(tag => tag.props.title === props.selected)
+    })
+
     const titles = defaults.map((tag)=>{
       return tag.props.title
     })
@@ -58,6 +59,7 @@ export default {
     }
 
     return {
+      current,
       defaults,
       titles,
       select,
@@ -107,12 +109,6 @@ $border-color: #d9d9d9;
   }
   &-content {
     padding: 8px 0;
-    &-item {
-      display: none;
-      &.selected {
-        display: block;
-      }
-    }
   }
 }
 </style>
