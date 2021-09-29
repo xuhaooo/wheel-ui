@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="markdown-body">
     <h1>使用</h1>
 
     <p>请先 <a href="#/doc/install">安装</a>本组件库。</p>
@@ -9,18 +9,12 @@
 
     <h2>Vue 单文件组件</h2>
     <p>代码示例：</p>
-    <pre>
-      <code>
-&lt;template&gt;
+    <pre><code>&lt;template&gt;
   &lt;div&gt;&lt;Button&gt;按钮&lt;/Button&gt;&lt;/div&gt;
 &lt;/template&gt;
 &lt;script&gt;
-  import {Button, Tabs, Switch, Dialog} from "king-ui"
-  export default {
-    components: {Button}
-  }
-&lt;/script&gt;
-      </code>
-    </pre>
+  import {Button, Tabs, Switch, Dialog} from "cat-ui"
+  export default {components: {Button}}
+&lt;/script&gt;</code></pre>
   </article>
 </template>
