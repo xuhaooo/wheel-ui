@@ -1,4 +1,4 @@
-import './lib/cat.scss'
+import './lib/lion.scss'
 import './index.scss'
 import { createApp } from 'vue'
 import App from './App.vue'

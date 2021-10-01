@@ -2,7 +2,7 @@
   <div class="topnav">
     <router-link class="logo" to="/">
       <svg class="icon">
-        <use xlink:href="#icon-sun"></use>
+        <use xlink:href="#icon-lion"></use>
       </svg>
     </router-link>
     <ul class="menu">
@@ -21,17 +21,17 @@ export default {
   props: {
     toggleMenuButtonVisible: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
-  setup(){
-    const menuVisible = inject <Ref <boolean> > ('menuVisible') // get
-    const toggleMenu = ()=>{
-      menuVisible.value = !menuVisible.value
-    }
-    return {toggleMenu}
-  } 
-}
+  setup() {
+    const menuVisible = inject<Ref<boolean>>("menuVisible");
+    const toggleMenu = () => {
+      menuVisible.value = !menuVisible.value;
+    };
+    return { toggleMenu };
+  },
+};
 </script>
 <style lang="scss" scoped>
 $color: #007974;
@@ -49,7 +49,7 @@ $color: #007974;
   > .logo {
     max-width: 6em;
     margin-right: auto;
-    >svg {
+    > svg {
       width: 32px;
       height: 32px;
     }
@@ -71,7 +71,7 @@ $color: #007974;
     transform: translateY(-50%);
     display: none;
   }
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     > .menu {
       display: none;
     }
