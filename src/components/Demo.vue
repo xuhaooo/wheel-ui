@@ -7,7 +7,6 @@
     <div class="demo-actions">
       <Button @click="hideCode" v-if="codeVisible">隐藏代码</Button>
       <Button @click="showCode" v-else>查看代码</Button>
-
     </div>
     <div class="demo-code" v-if="codeVisible">
       <pre class="language-html" v-html="html"></pre>
