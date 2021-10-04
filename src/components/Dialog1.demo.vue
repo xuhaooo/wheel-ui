@@ -18,9 +18,7 @@
 </template>
 
 <script lang="ts">
-import Button from '../lib/Button.vue'
-import Dialog from '../lib/Dialog.vue'
-import {openDialog} from '../lib/openDialog'
+import {Button, Dialog} from '../lib/index'
 import { ref } from 'vue'
 export default {
   components: {
