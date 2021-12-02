@@ -9,3 +9,5 @@ export { default as Header } from './Header.vue';
 export { default as Content } from './Content.vue';
 export { default as Sider } from './Sider.vue';
 export { default as Footer } from './Footer.vue';
+export { default as Input } from './Input.vue';
+export { default as Icon } from './Icon.vue';

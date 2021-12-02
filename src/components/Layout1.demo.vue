@@ -27,23 +27,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.lion-layout {
-  color: #fff;
-  text-align: center;
-  &-header {
-    height: 64px;
-    background: #82e2f9;
-    line-height: 64px;
-  }
-  &-content {
-    height: 200px;
-    background: #2f99f4;
-    line-height: 200px;
-  }
-  &-footer {
-    height: 64px;
-    background: #82e2f9;
-    line-height: 64px;
-  }
+.lion-layout {color: #fff;text-align: center;
+
+  &-header {height: 64px;background: #82e2f9;line-height: 64px;}
+
+  &-content {height: 200px;background: #2f99f4;line-height: 200px;}
+
+  &-footer {height: 64px;background: #82e2f9;line-height: 64px;}
 }
 </style>
