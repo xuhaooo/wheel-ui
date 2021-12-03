@@ -2,7 +2,7 @@
   <div class="lion-tabs">
     <div class="lion-tabs-nav" ref="container">
       <div class="lion-tabs-nav-item" 
-        :class="{selected: t === selected}"
+        :class="{selected: t === selected, disabled: t === disabled}"
         v-for="(t,index) in titles"
         :ref="el => { if (t === selected) selectedItem = el }"
         @click="select(t)"
@@ -21,6 +21,10 @@ export default {
   props: {
     selected: {
       type: String
+    },
+    disabled: {
+      type: [String, Boolean],
+      default: false
     }
   },
   setup(props, context){
@@ -96,6 +100,11 @@ $border-color: #d9d9d9;
       &.selected {
         color: $blue;
       }
+
+      &.disabled {
+        pointer-events: none;
+        color: #eee;
+      }
     }
 
     &-indicator {
@@ -108,6 +117,7 @@ $border-color: #d9d9d9;
       transition: all 250ms;
     }
   }
+  
   &-content {
     padding: 8px 0;
   }
