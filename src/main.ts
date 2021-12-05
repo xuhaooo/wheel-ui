@@ -19,9 +19,7 @@ window.onload = function () {
       if (event.touches.length > 1) {
           event.preventDefault();
       }
-  }, {
-      passive: false
-  });
+  }, {passive: false});
   let lastTouchEnd = 0;
   document.addEventListener('touchend', function (event) {
       let now = (new Date()).getTime();

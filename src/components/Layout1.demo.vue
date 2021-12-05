@@ -1,5 +1,5 @@
 <demo>
-示例 1：上中下布局
+上中下布局
 </demo>
 
 <template>

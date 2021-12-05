@@ -11,3 +11,6 @@ export { default as Sider } from './Sider.vue';
 export { default as Footer } from './Footer.vue';
 export { default as Input } from './Input.vue';
 export { default as Icon } from './Icon.vue';
+export { default as Collapse } from './Collapse.vue';
+export { default as CollapseItem } from './CollapseItem.vue';
+export { default as EventBus } from './eventBus';

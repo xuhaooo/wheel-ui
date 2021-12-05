@@ -1,3 +1,4 @@
+import { h } from 'vue'
 import {createWebHashHistory, createRouter} from 'vue-router'
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
@@ -8,11 +9,11 @@ import TabsDemo from './components/TabsDemo.vue'
 import LayoutDemo from './components/LayoutDemo.vue'
 import InputDemo from './components/InputDemo.vue'
 import IconDemo from './components/IconDemo.vue'
+import CollapseDemo from './components/CollapseDemo.vue'
 import Markdown from './components/Markdown.vue'
 import intro from './markdown/intro.md'
 import getStarted from './markdown/get-started.md'
 import install from './markdown/install.md'
-import { h } from 'vue'
 
 const history = createWebHashHistory()
 const md = string => h(Markdown, {content: string, key: string})
@@ -35,7 +36,8 @@ export const router = createRouter({
         {path: 'tabs', component: TabsDemo},
         {path: 'layout', component: LayoutDemo},
         {path: 'input', component: InputDemo},
-        {path: 'icon', component: IconDemo}
+        {path: 'icon', component: IconDemo},
+        {path: 'collapse', component: CollapseDemo}
       ]
     }
   ]
