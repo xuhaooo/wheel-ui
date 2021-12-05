@@ -8,7 +8,7 @@
       />
     <template v-if="error">
       <div class="errorMessage">
-        <Icon name="prompt-fill"></Icon>
+        <Icon name="prompt-fill" class="error"></Icon>
         <span>{{ error }}</span>
       </div>
     </template>
@@ -69,7 +69,12 @@ export default {
 
   > .errorMessage {
     color: #f1453d;
-    vertical-align: bottom;
+    vertical-align: baseline;
+    
+    > .error {
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 </style>
