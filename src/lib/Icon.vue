@@ -14,3 +14,10 @@
     }
   }
 </script>
+
+<style lang="scss">
+.icon {
+  width: 30px;
+  height: 30px;
+}
+</style>

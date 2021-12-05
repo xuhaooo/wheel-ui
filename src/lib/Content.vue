@@ -10,7 +10,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .lion-layout-content {
   flex-grow: 1;
 }

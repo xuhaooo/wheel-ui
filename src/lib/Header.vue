@@ -9,7 +9,3 @@
     name: 'lion-header'
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

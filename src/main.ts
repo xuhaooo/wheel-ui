@@ -6,6 +6,8 @@ import { router } from './router'
 import './assets/svg.js'
 import 'github-markdown-css'
 import Markdown from './components/Markdown.vue'
+import Demo from './components/Demo.vue'
+import {Button, Switch, Tab, Tabs, Dialog, Header, Content, Footer, Sider, Layout, Icon, Input, CollapseItem, Collapse} from './lib/index'
 
 
 
@@ -13,6 +15,22 @@ const app = createApp(App)
 app.component("Markdown", Markdown)
 app.use(router)
 app.mount('#app')
+app.component("Demo", Demo)
+app.component("Button", Button)
+app.component("Switch", Switch)
+app.component("Tab", Tab)
+app.component("Tabs", Tabs)
+app.component("Dialog", Dialog)
+app.component("Header", Header)
+app.component("Content", Content)
+app.component("Footer", Footer)
+app.component("Sider", Sider)
+app.component("Layout", Layout)
+app.component("Icon", Icon)
+app.component("Input", Input)
+app.component("CollapseItem", CollapseItem)
+app.component("Collapse", Collapse)
+
 
 window.onload = function () {
   document.addEventListener('touchstart', function (event) {

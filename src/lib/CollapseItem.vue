@@ -1,11 +1,11 @@
 <template>
   <div class="lion-collapse-item" :class="{open:open}">
     <header class="title" @click="toggleOpen">
-      <lion-icon name="arrow-right"
+      <Icon name="arrow-right"
               :class="open?
               'collapse-item-svg-bottom':
               'collapse-item-svg-right'">
-      </lion-icon>
+      </Icon>
       {{ title }}
     </header>
     <main class="content" v-if="open">
@@ -17,7 +17,6 @@
 <script lang='ts'>
 import {ref, inject} from 'vue';
 import {EventBus} from './index';
-import Icon from './Icon.vue'
 
 export default {
   props: {
@@ -30,7 +29,6 @@ export default {
       require: true
     }
   },
-  components: {'lion-icon': Icon},
   setup(props) {
     //注入事件总线
     const eventBus: EventBus = inject('eventBus');

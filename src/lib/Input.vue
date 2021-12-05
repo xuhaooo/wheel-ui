@@ -8,7 +8,7 @@
       />
     <template v-if="error">
       <div class="errorMessage">
-        <lion-icon name="prompt-fill"></lion-icon>
+        <Icon name="prompt-fill"></Icon>
         <span>{{ error }}</span>
       </div>
     </template>
@@ -16,16 +16,13 @@
 </template>
 
 <script lang="ts">
-import Icon from './Icon.vue'
-
 export default {
   props: {
     value: {type: String},
     disabled: {type: Boolean, default: false},
     readonly: {type: Boolean, default: false},
     error: {type: String}
-  },
-  components: {'lion-icon': Icon}
+  }
 }
 </script>
 
