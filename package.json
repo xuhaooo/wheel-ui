@@ -1,11 +1,11 @@
 {
-  "name": "lion-ui-2",
+  "name": "wheel-ui-2",
   "version": "0.0.3",
   "files": [
     "dist/lib/*"
   ],
-  "main": "dist/lib/lion.js",
-  "module": "dist/lib/lion.esm.js",
+  "main": "dist/lib/wheel.js",
+  "module": "dist/lib/wheel.esm.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"

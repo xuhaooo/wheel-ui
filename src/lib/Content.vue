@@ -1,17 +1,17 @@
 <template>
-  <main class="lion-layout-content">
+  <main class="wheel-layout-content">
     <slot></slot>
   </main>
 </template>
 
 <script lang="ts">
   export default {
-    name: 'lion-content'
+    name: 'wheel-content'
   }
 </script>
 
 <style lang="scss">
-.lion-layout-content {
+.wheel-layout-content {
   flex-grow: 1;
 }
 </style>

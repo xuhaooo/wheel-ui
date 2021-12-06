@@ -1,11 +1,11 @@
 <template>
-  <header class="lion-layout-sider">
+  <header class="wheel-layout-sider">
     <slot></slot>
   </header>
 </template>
 
 <script lang="ts">
   export default {
-    name: 'lion-sider'
+    name: 'wheel-sider'
   }
 </script>

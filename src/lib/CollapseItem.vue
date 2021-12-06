@@ -1,5 +1,5 @@
 <template>
-  <div class="lion-collapse-item" :class="{open:open}">
+  <div class="wheel-collapse-item" :class="{open:open}">
     <header class="title" @click="toggleOpen">
       <Icon name="arrow-right"
               :class="open?
@@ -58,7 +58,7 @@ export default {
 $grey: #ddd;
 $background-color: #eee;
 
-.lion-collapse-item {
+.wheel-collapse-item {
   .title {
     border: 1px solid $grey;
     min-height: 32px;

@@ -1,5 +1,5 @@
 <template>
-  <section class="lion-layout" :class="{hasSider: classes}">
+  <section class="wheel-layout" :class="{hasSider: classes}">
     <slot></slot>
   </section>
 </template>
@@ -8,12 +8,12 @@
 import {ref, onMounted} from 'vue'
 
 export default {
-  name: 'lion-layout',
+  name: 'wheel-layout',
   setup(props, context){
     const classes = ref(false)
     onMounted(() => {
       context.slots.default().forEach(item => {
-        if(item.type.name.toLowerCase() === "lion-sider"){
+        if(item.type.name.toLowerCase() === "wheel-sider"){
           classes.value = true
         }
       })
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
-.lion-layout {
+.wheel-layout {
   display: flex;
   flex: auto;
   flex-direction: column;

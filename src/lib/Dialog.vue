@@ -1,13 +1,13 @@
 <template>
   <template v-if="visible">
     <Teleport to="#app">
-      <div class="lion-dialog-overlay" 
+      <div class="wheel-dialog-overlay" 
         @click="onClickOverlay"></div>
-      <div class="lion-dialog-wrapper">
-        <div class="lion-dialog">
+      <div class="wheel-dialog-wrapper">
+        <div class="wheel-dialog">
           <header>
             <slot name="title"/>
-            <span class="lion-dialog-close" @click="close"></span>
+            <span class="wheel-dialog-close" @click="close"></span>
           </header>
           <main>
             <slot name="content"/>
@@ -69,7 +69,7 @@ export default {
 $radius: 4px;
 $border-color: #d9d9d9;
 
-.lion-dialog {
+.wheel-dialog {
   background: white;
   border-radius: $radius;
   box-shadow: 0 0 3px fade_out(black, 0.5);

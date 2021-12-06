@@ -1,6 +1,6 @@
 <template>
-  <button class="lion-button" :class="classes" :disabled="disabled">
-    <span class="lion-loadingIndicator" v-if="loading"></span>
+  <button class="wheel-button" :class="classes" :disabled="disabled">
+    <span class="wheel-loadingIndicator" v-if="loading"></span>
     <slot></slot>
   </button>
 </template>
@@ -33,9 +33,9 @@ export default {
     const {theme,size,level} = props
     const classes = computed(()=>{
       return {
-        [`lion-theme-${theme}`]: theme,
-        [`lion-size-${size}`]: size,
-        [`lion-level-${level}`]: level,
+        [`wheel-theme-${theme}`]: theme,
+        [`wheel-size-${size}`]: size,
+        [`wheel-level-${level}`]: level,
       }
     })
     return {classes}
@@ -50,7 +50,7 @@ $blue: #40a9ff;
 $radius: 4px;
 $red: red;
 $grey: grey;
-.lion-button {
+.wheel-button {
   box-sizing: border-box;
   height: $h;
   padding: 0 12px;
@@ -79,7 +79,7 @@ $grey: grey;
   &::-moz-focus-inner {
     border: 0;
   }
-  &.lion-theme-link {
+  &.wheel-theme-link {
     border-color: transparent;
     box-shadow: none;
     color: $blue;
@@ -88,7 +88,7 @@ $grey: grey;
       color: lighten($blue, 10%)
     }
   }
-  &.lion-theme-text {
+  &.wheel-theme-text {
     border-color: transparent;
     box-shadow: none;
     color: inherit;
@@ -97,18 +97,18 @@ $grey: grey;
       background: darken(white, 5%);
     }
   }
-  &.lion-size-big {
+  &.wheel-size-big {
     font-size: 24px;
     height: 48px;
     padding: 0 16px;
   }
-  &.lion-size-small {
+  &.wheel-size-small {
     font-size: 12px;
     height: 20px;
     padding: 0 4px;
   }
-  &.lion-theme-button {
-    &.lion-level-main {
+  &.wheel-theme-button {
+    &.wheel-level-main {
       background: $blue;
       color: white;
       border-color: $blue;
@@ -118,7 +118,7 @@ $grey: grey;
         border-color: darken($blue, 10%);
       }
     }
-    &.lion-level-danger {
+    &.wheel-level-danger {
       background: $red;
       border-color: $red;
       color: white;
@@ -129,8 +129,8 @@ $grey: grey;
       }
     }
   }
-  &.lion-theme-link {
-    &.lion-level-danger {
+  &.wheel-theme-link {
+    &.wheel-level-danger {
       color: $red;
       &:hover,
       &:focus {
@@ -138,15 +138,15 @@ $grey: grey;
       }
     }
   }
-  &.lion-theme-text {
-    &.lion-level-main {
+  &.wheel-theme-text {
+    &.wheel-level-main {
       color: $blue;
       &:hover,
       &:focus {
         color: darken($blue, 10%);
       }
     }
-    &.lion-level-danger {
+    &.wheel-level-danger {
       color: $red;
       &:hover,
       &:focus {
@@ -154,7 +154,7 @@ $grey: grey;
       }
     }
   }
-  &.lion-theme-button {
+  &.wheel-theme-button {
     &[disabled] {
       cursor: not-allowed;
       color: $grey;
@@ -163,14 +163,14 @@ $grey: grey;
       }
     }
   }
-  &.lion-theme-link,
-  &.lion-theme-text {
+  &.wheel-theme-link,
+  &.wheel-theme-text {
     &[disabled] {
       cursor: not-allowed;
       color: $grey;
     }
   }
-  > .lion-loadingIndicator {
+  > .wheel-loadingIndicator {
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -179,10 +179,10 @@ $grey: grey;
     border-color: $blue $blue $blue transparent;
     border-style: solid;
     border-width: 2px;
-    animation: lion-spin 1s infinite linear;
+    animation: wheel-spin 1s infinite linear;
   }
 }
-@keyframes lion-spin {
+@keyframes wheel-spin {
   0%{transform: rotate(0deg)}
   100%{transform: rotate(360deg)}
 }

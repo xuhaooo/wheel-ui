@@ -1,6 +1,6 @@
 <template>
   <label class="wrapper" :class="{error}">
-    <input class="lion-input" type="text"
+    <input class="wheel-input" type="text"
       :value="value"
       :disabled="disabled"
       :readonly="readonly"
@@ -38,7 +38,7 @@ export default {
     margin-right: .5em;
   }
 
-  .lion-input {
+  .wheel-input {
     height: 32px;
     border: 1px solid #999;
     border-radius: 4px;
@@ -62,7 +62,7 @@ export default {
   }
 
   &.error {
-    .lion-input {
+    .wheel-input {
       border-color: #f1453d;
     }
   }

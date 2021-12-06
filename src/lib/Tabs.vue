@@ -1,15 +1,15 @@
 <template>
-  <div class="lion-tabs">
-    <div class="lion-tabs-nav" ref="container">
-      <div class="lion-tabs-nav-item" 
+  <div class="wheel-tabs">
+    <div class="wheel-tabs-nav" ref="container">
+      <div class="wheel-tabs-nav-item" 
         :class="{selected: t === selected, disabled: t === disabled}"
         v-for="(t,index) in titles"
         :ref="el => { if (t === selected) selectedItem = el }"
         @click="select(t)"
         :key="index">{{t}}</div>
-      <div class="lion-tabs-nav-indicator" ref="indicator"></div>
+      <div class="wheel-tabs-nav-indicator" ref="indicator"></div>
     </div>
-    <div class="lion-tabs-content">
+    <div class="wheel-tabs-content">
       <component :is="current" :key="current.props.title"/>
     </div>
   </div>
@@ -81,7 +81,7 @@ $blue: #40a9ff;
 $color: #333;
 $border-color: #d9d9d9;
 
-.lion-tabs {
+.wheel-tabs {
   &-nav {
     display: flex;
     color: $color;

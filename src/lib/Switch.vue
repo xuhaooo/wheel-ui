@@ -1,5 +1,5 @@
 <template>
-  <button class="lion-switch" @click="toggle" :class="{'lion-checked': value}"><span></span></button>
+  <button class="wheel-switch" @click="toggle" :class="{'wheel-checked': value}"><span></span></button>
 </template>
 <script lang="ts">
 export default {
@@ -17,7 +17,7 @@ export default {
 <style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-.lion-switch {
+.wheel-switch {
   height: $h;
   width: $h * 2;
   border: none;
@@ -34,7 +34,7 @@ $h2: $h - 4px;
     border-radius: $h2 / 2;
     transition: all 250ms;
   }
-  &.lion-checked {
+  &.wheel-checked {
     background: #1890ff;
     > span {
       left: calc(100% - #{$h2} - 2px);
@@ -48,7 +48,7 @@ $h2: $h - 4px;
       width: $h2 + 4px;
     }
   }
-  &.lion-checked:active {
+  &.wheel-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;

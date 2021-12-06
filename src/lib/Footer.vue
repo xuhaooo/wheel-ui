@@ -1,11 +1,11 @@
 <template>
-  <footer class="lion-layout-footer">
+  <footer class="wheel-layout-footer">
     <slot></slot>
   </footer>
 </template>
 
 <script lang="ts">
   export default {
-    name: 'lion-footer'
+    name: 'wheel-footer'
   }
 </script>

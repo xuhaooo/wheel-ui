@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.lion-layout {color: #fff;text-align: center;
+.wheel-layout {color: #fff;text-align: center;
 
   &-header {height: 64px;background: #82e2f9;line-height: 64px;}
 

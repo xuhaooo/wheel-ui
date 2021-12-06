@@ -1,5 +1,5 @@
 <template>
-  <div class="lion-collapse">
+  <div class="wheel-collapse">
     <slot></slot>
   </div>
 </template>
