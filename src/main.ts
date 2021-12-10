@@ -7,6 +7,7 @@ import './assets/svg.js'
 import 'github-markdown-css'
 import Markdown from './components/Markdown.vue'
 import Demo from './components/Demo.vue'
+import Attr from './components/Doc/Attr.vue'
 import {Button, Switch, Tab, Tabs, Dialog, Header, Content, Footer, Sider, Layout, Icon, Input, CollapseItem, Collapse} from './lib/index'
 
 
@@ -16,6 +17,7 @@ app.component("Markdown", Markdown)
 app.use(router)
 app.mount('#app')
 app.component("Demo", Demo)
+app.component("Attr", Attr)
 app.component("Button", Button)
 app.component("Switch", Switch)
 app.component("Tab", Tab)
