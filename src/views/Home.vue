@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="topnavAndBanner">
-      <Topnav></Topnav>
+      <Topnav />
       <div class="banner">
         <h1>Wheel UI</h1>
-        <h2>一个厉害的 UI 框架</h2>
+        <h2>一个基于 Vue 3 的 UI 组件库</h2>
         <p class="actions">
           <a href="https://github.com">Github</a>
           <router-link to="/doc">开始</router-link>
@@ -56,17 +56,14 @@ $color: #007974;
 .features {
   margin: 64px auto;
   padding: 0 16px;
-
   @media(min-width: 800px) {
     width: 800px;
-
     >ul {
       >li {
         width: 50%;
       }
     }
   }
-
   @media(min-width: 1200px) {
     width: 1200px;
     >ul {

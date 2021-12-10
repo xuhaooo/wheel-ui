@@ -4,19 +4,19 @@
 
 <template>
   <div>
-    <Button size="big">大大大大</Button>
-    <Button>普普通通</Button>
-    <Button size="small">小小小小</Button>
+    <Button size="big">Large</Button>
+    <Button>Default</Button>
+    <Button size="small">Small</Button>
   </div>
   <div>
-    <Button theme="link" size="big">大大大大</Button>
-    <Button theme="link">普普通通</Button>
-    <Button theme="link" size="small">小小小小</Button>
+    <Button theme="link" size="big">Link(large)</Button>
+    <Button theme="link">Link</Button>
+    <Button theme="link" size="small">Link(small)</Button>
   </div>
   <div>
-    <Button theme="text" size="big">大大大大</Button>
-    <Button theme="text">普普通通</Button>
-    <Button theme="text" size="small">小小小小</Button>
+    <Button theme="text" size="big">Text(large)</Button>
+    <Button theme="text">Text</Button>
+    <Button theme="text" size="small">Text(small)</Button>
   </div>
 </template>
 

@@ -4,19 +4,19 @@
 
 <template>
   <div>
-    <Button level="main">主要按钮</Button>
-    <Button>普通按钮</Button>
-    <Button level="danger">危险按钮</Button>
+    <Button level="main">Main</Button>
+    <Button>Default</Button>
+    <Button level="danger">Danger</Button>
   </div>
   <div>
-    <Button theme="link" level="main">主要链接按钮</Button>
-    <Button theme="link">普通链接按钮</Button>
-    <Button theme="link" level="danger">危险链接按钮</Button>
+    <Button theme="link" level="main">Link(main)</Button>
+    <Button theme="link">Link</Button>
+    <Button theme="link" level="danger">Link(danger)</Button>
   </div>
   <div>
-    <Button theme="text" level="main">主要文字按钮</Button>
-    <Button theme="text">普通文字按钮</Button>
-    <Button theme="text" level="danger">危险文字按钮</Button>
+    <Button theme="text" level="main">Text(main)</Button>
+    <Button theme="text">Text</Button>
+    <Button theme="text" level="danger">Text(danger)</Button>
   </div>
 </template>
 
