@@ -5,13 +5,13 @@
 <template>
   <div>
     <Button @click="toggle">打开对话框</Button>
-    <Dialog v-model:visible="x" :closeOnClickOverlay="true" :ok="f1" :cancel="f2">
+    <Dialog v-model:visible="visible" :closeOnClickOverlay="true" :ok="f1" :cancel="f2">
       <template v-slot:content>
-        <strong>hi</strong>
-        <div>hi2</div>
+        <div>内容 1</div>
+        <div>内容 2</div>
       </template>
       <template v-slot:title>
-        <strong>加粗的标题</strong>
+        标题
       </template>
     </Dialog>
   </div>
@@ -26,16 +26,16 @@ export default {
     Button
   },
   setup(){
-    const x = ref(false)
+    const visible = ref(false)
     const toggle = () => {
-      x.value = !x.value
+      visible.value = !visible.value
     }
     const f1 = () => {
       return true
     }
     const f2 = () => {}
     return {
-      x,
+      visible,
       toggle,
       f1,
       f2

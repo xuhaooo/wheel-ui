@@ -3,21 +3,37 @@
     <h1>Switch 示例</h1>
     <Demo :component="Switch1Demo"/>
     <Demo :component="Switch2Demo"/>
+    <Attr :columns="columns" :data="data" />
   </div>
 </template>
 <script lang="ts">
 import { ref } from 'vue'
 import Switch1Demo from '../Switch/Switch1.demo.vue'
 import Switch2Demo from '../Switch/Switch2.demo.vue'
-import Demo from '../Demo.vue'
+import { columns } from '../../lib/attrData'
 export default {
-  components: {
-    Demo
-  },
   setup(){
+    const data = ref([
+      {
+        params: 'value',
+        desc: '是否打开',
+        type: 'boolean',
+        select: 'true / false',
+        default: 'false'
+      },
+      {
+        params: 'disabled',
+        desc: '是否禁用',
+        type: 'boolean',
+        select: 'true / false',
+        default: 'false'
+      },
+    ])
     return {
       Switch1Demo,
       Switch2Demo,
+      columns,
+      data
     }
   }
 }

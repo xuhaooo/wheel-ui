@@ -4,7 +4,7 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Tab, Switch, Dialog, openDialog, Icon, Input, Layout, Collapse} from "wheel-ui-2"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog, Icon, Input, Layout, Collapse} from "wheel-ui"
 ```
 
 就可以使用我提供的组件了。
@@ -20,7 +20,7 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog, Icon, Input, Layout, Coll
   </div>
 </template>
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog, Icon, Input, Layout, Collapse} from "wheel-ui-2"
+import {Button} from "wheel-ui"
 export default {
   components: {Button}
 }
