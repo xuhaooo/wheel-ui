@@ -101,7 +101,7 @@ aside {
         text-decoration: none;
       }
       .router-link-active {
-        background: rgb(239, 248, 239);
+        background: #DFEAF8;
       }
     }
   }

@@ -6,7 +6,7 @@
         <h1>Wheel UI</h1>
         <h2>一个基于 Vue 3 的 UI 组件库</h2>
         <p class="actions">
-          <a href="https://github.com">Github</a>
+          <a href="https://github.com/xuhaooo/wheel-ui">Github</a>
           <router-link to="/doc">开始</router-link>
         </p>
       </div>
@@ -46,11 +46,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$green: #02bcb0;
+// $green: #02bcb0;
+$green: #fff;
 $border-radius: 4px;
-$color: #007974;
+// $color: #007974;
+$color: #fff;
 .topnavAndBanner {
-  background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+  // background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+  background: linear-gradient(90deg, rgba(110,129,245,1) 0%, rgba(142,36,183,1) 100%);
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
@@ -117,7 +120,8 @@ $color: #007974;
     a {
       margin: 0 8px;
       background: $green;
-      color: white;
+      // color: white;
+      color: #341CCB;
       display: inline-lock;
       padding: 8px 24px;
       border-radius: $border-radius;

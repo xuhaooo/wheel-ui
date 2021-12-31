@@ -4,7 +4,9 @@
     <div class="content">
       <Aside></Aside>
       <main>
-        <router-view></router-view>
+        <div class="main-content">
+          <router-view></router-view>
+        </div>
       </main>
     </div>
   </div>
@@ -45,6 +47,7 @@ export default {
         overflow: auto;
         flex-grow: 1;
         height: 80vh;
+        margin: auto;
       }
     }
 
@@ -53,6 +56,10 @@ export default {
       flex-grow: 1;
       padding: 16px;
       background: white;
+      .main-content {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
     }
   }
 }

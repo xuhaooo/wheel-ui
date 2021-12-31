@@ -43,7 +43,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$color: #007974;
+// $color: #007974;
+$color: #341CCB;
 .topnav {
   position: absolute;
   top: 0;
